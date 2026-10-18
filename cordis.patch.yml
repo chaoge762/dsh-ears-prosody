@@ -1,0 +1,8 @@
+# dsh-ears-prosody bundle patch —— 挂载声明
+#
+# DSH 启动时按 bundle 层栈叠加各插件 patch，这一行把 dsh-ears-prosody 插进配置树。
+# 名字从 dsh-ears 改名而来：npm 上已有同名 ASR 插件，撞名导致宿主拒绝激活。
+# 改完 lib/ 下的代码要重启宿主；本插件没有客户端半区，不需要刷新前端。
+- insert:
+    - id: ears-prosody
+      name: 'dsh-ears-prosody'
