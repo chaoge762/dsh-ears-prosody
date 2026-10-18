@@ -1,0 +1,52 @@
+{
+  "name": "dsh-ears-prosody",
+  "version": "0.1.4",
+  "type": "module",
+  "description": "给 DeepSeek Harness 加一双耳朵：把音频变成「怎么说的」而不是「说了什么」。本地声学层零依赖，可选的听音模型层补上语义与情绪。",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "selfcheck": "node test/selfcheck.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "audio",
+    "prosody",
+    "paralinguistic",
+    "voice",
+    "emotion",
+    "tone",
+    "语音",
+    "语气",
+    "声学"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaoge762/dsh-ears-prosody.git"
+  },
+  "homepage": "https://github.com/chaoge762/dsh-ears-prosody#readme",
+  "bugs": {
+    "url": "https://github.com/chaoge762/dsh-ears-prosody/issues"
+  },
+  "author": "chaoge888 <1376034575@qq.com>",
+  "license": "MIT"
+}
